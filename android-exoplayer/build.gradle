@@ -28,4 +28,14 @@ dependencies {
         exclude group: 'com.squareup.okhttp3', module: 'okhttp'
     }
     compile 'com.squareup.okhttp3:okhttp:3.9.1'
+
+    compile "com.squareup.okhttp:okhttp:2.0.0"
+    compile "com.squareup.okhttp:okhttp-urlconnection:2.0.0"
+    compile 'com.fasterxml.jackson.core:jackson-core:2.7.3'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.7.3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.7.3'
+    compile "com.squareup.retrofit:converter-jackson:1.9.0"
+    compile("com.squareup.retrofit:retrofit:1.9.0") {
+        exclude group: 'com.google.code.gson', module: 'gson'
+    }
 }
